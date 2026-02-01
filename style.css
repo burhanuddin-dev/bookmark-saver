@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  padding: 30px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #a8e6cf, #56c596);
+}
+.bookmark-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #fff;
+  gap: 1rem;
+  width: 400px;
+  border-radius: 6px;
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.title {
+  font-size: 1.8rem;
+  color: #2dcc71;
+  text-align: center;
+}
+.bookmark-name,
+.bookmark-url {
+  padding: 10px;
+  font-size: 1rem;
+  color: #333;
+  border: 1px solid #ccc;
+}
+input:focus {
+  outline: 1px solid #2dcc71;
+}
+.bookmark-add-btn {
+  padding: 15px;
+  background-color: #2dcc71;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.bookmark-item {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+}
+.bookmark-link {
+  text-decoration: none;
+  color: #2dcc71;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.bookmark-remove-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e74d39;
+  color: white;
+  cursor: pointer;
+}
